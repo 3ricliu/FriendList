@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0716BBB1255E837D00CBE09E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716BBB0255E837D00CBE09E /* User.swift */; };
+		0716BBB4255E838F00CBE09E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716BBB3255E838F00CBE09E /* Friend.swift */; };
 		0775BDE5255D0FF800FEF6A1 /* URLFriendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775BDE4255D0FF800FEF6A1 /* URLFriendApp.swift */; };
 		0775BDE7255D0FF800FEF6A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775BDE6255D0FF800FEF6A1 /* ContentView.swift */; };
 		0775BDE9255D0FFB00FEF6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0775BDE8255D0FFB00FEF6A1 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0716BBB0255E837D00CBE09E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0716BBB3255E838F00CBE09E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		0775BDE1255D0FF800FEF6A1 /* URLFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0775BDE4255D0FF800FEF6A1 /* URLFriendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFriendApp.swift; sourceTree = "<group>"; };
 		0775BDE6255D0FF800FEF6A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				0775BDE4255D0FF800FEF6A1 /* URLFriendApp.swift */,
 				0775BDE6255D0FF800FEF6A1 /* ContentView.swift */,
+				0716BBB0255E837D00CBE09E /* User.swift */,
+				0716BBB3255E838F00CBE09E /* Friend.swift */,
 				0775BDF4255E5D0900FEF6A1 /* UserDetail.swift */,
 				0775BDE8255D0FFB00FEF6A1 /* Assets.xcassets */,
 				0775BDED255D0FFB00FEF6A1 /* Info.plist */,
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0716BBB1255E837D00CBE09E /* User.swift in Sources */,
 				0775BDE7255D0FF800FEF6A1 /* ContentView.swift in Sources */,
+				0716BBB4255E838F00CBE09E /* Friend.swift in Sources */,
 				0775BDF5255E5D0900FEF6A1 /* UserDetail.swift in Sources */,
 				0775BDE5255D0FF800FEF6A1 /* URLFriendApp.swift in Sources */,
 			);
