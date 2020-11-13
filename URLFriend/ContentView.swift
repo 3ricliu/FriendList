@@ -33,7 +33,7 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       List(users, id: \.id) { user in
-        NavigationLink(destination: UserDetail(user: user)) {
+        NavigationLink(destination: UserDetail(user: user, users: users)) {
           Text("\(user.name)")
         }
       }
