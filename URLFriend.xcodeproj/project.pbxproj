@@ -11,6 +11,7 @@
 		0775BDE7255D0FF800FEF6A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775BDE6255D0FF800FEF6A1 /* ContentView.swift */; };
 		0775BDE9255D0FFB00FEF6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0775BDE8255D0FFB00FEF6A1 /* Assets.xcassets */; };
 		0775BDEC255D0FFB00FEF6A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0775BDEB255D0FFB00FEF6A1 /* Preview Assets.xcassets */; };
+		0775BDF5255E5D0900FEF6A1 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775BDF4255E5D0900FEF6A1 /* UserDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0775BDE8255D0FFB00FEF6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0775BDEB255D0FFB00FEF6A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0775BDED255D0FFB00FEF6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0775BDF4255E5D0900FEF6A1 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				0775BDE4255D0FF800FEF6A1 /* URLFriendApp.swift */,
 				0775BDE6255D0FF800FEF6A1 /* ContentView.swift */,
+				0775BDF4255E5D0900FEF6A1 /* UserDetail.swift */,
 				0775BDE8255D0FFB00FEF6A1 /* Assets.xcassets */,
 				0775BDED255D0FFB00FEF6A1 /* Info.plist */,
 				0775BDEA255D0FFB00FEF6A1 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0775BDE7255D0FF800FEF6A1 /* ContentView.swift in Sources */,
+				0775BDF5255E5D0900FEF6A1 /* UserDetail.swift in Sources */,
 				0775BDE5255D0FF800FEF6A1 /* URLFriendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

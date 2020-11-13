@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct User: Codable {
-  let id: String?
-  let isActive: Bool?
-  let name: String?
-  let age: Int?
-  let company: String?
-  let email: String?
-  let address: String?
-  let about: String?
-  let registered: String?
-  let tags: [String?]
-  let friends: [Friend?]
+  let id: String
+  let isActive: Bool
+  let name: String
+  let age: Int
+  let company: String
+  let email: String
+  let address: String
+  let about: String
+  let registered: String
+  let tags: [String]
+  let friends: [Friend]
 }
 
 struct Friend: Codable {
-  let id: String?
-  let name: String?
+  let id: String
+  let name: String
 }
 
 
@@ -33,10 +33,11 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       List(users, id: \.id) { user in
-        NavigationLink(destination: Text("\(user.id ?? "ay")")) {
-          Text("\(user.name ?? "boo")")
+        NavigationLink(destination: UserDetail(user: user)) {
+          Text("\(user.name)")
         }
       }
+      .navigationBarTitle("Frands")
     }
     .onAppear(perform: loadData)
   }
