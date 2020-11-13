@@ -12,17 +12,26 @@ struct UserDetail: View {
 
   var body: some View {
     List {
-      Section(header: Text("Basic Info:")) {
+      Section(header: Text("Basic Info")) {
         Text("\(self.user.age)")
         Text("\(self.user.email)")
       }
-      Section(header: Text("Main:")) {
+      Section(header: Text("Main")) {
         Text("\(self.user.company)")
         Text("\(self.user.about)")
       }
-      Section(header: Text("Etc:")) {
+      Section(header: Text("Etc")) {
         Text("\(self.user.address)")
         Text("\(self.user.registered)")
+      }
+      Section(header: Text("Friends")) {
+        ForEach(self.user.friends, id: \.id) { friend in
+          Text("\(friend.name)")
+        }
+      }
+      Section(header: Text("Tags")) {
+        let hashtagged = self.user.tags.map { "#\($0)"}.joined(separator: ", ")
+        Text("\(hashtagged)")
       }
     }
     .navigationBarTitle("\(self.user.name)")

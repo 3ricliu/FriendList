@@ -52,7 +52,10 @@ struct ContentView: View {
     
     URLSession.shared.dataTask(with: request) { data, response, error in
       if let data = data {
-        if let decodedResponse = try? JSONDecoder().decode([User].self, from: data) {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+
+        if let decodedResponse = try? decoder.decode([User].self, from: data) {
           DispatchQueue.main.async {
             self.users = decodedResponse
           }
