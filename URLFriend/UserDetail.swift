@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UserDetail: View {
   let user: User
+  let users: [User]
   let friends: [User]
 
   var body: some View {
@@ -27,7 +28,9 @@ struct UserDetail: View {
       }
       Section(header: Text("Friends")) {
         ForEach(self.friends, id: \.id) { friend in
-          Text("\(friend.name): \(friend.age)")
+          NavigationLink(destination: UserDetail(user: friend, users: self.users)) {
+            Text("\(friend.name): \(friend.age)")
+          }
         }
         
       }
@@ -41,6 +44,8 @@ struct UserDetail: View {
   
   init(user: User, users: [User]) {
     self.user = user
+    self.users = users
+
     var matchingFriends = [User]()
     
     for friend in user.friends {
